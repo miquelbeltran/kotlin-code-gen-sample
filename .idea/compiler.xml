@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="generator_main" target="1.8" />
+      <module name="generator_test" target="1.8" />
+      <module name="kotlin-code-gen-sample_main" target="1.8" />
+      <module name="kotlin-code-gen-sample_test" target="1.8" />
+      <module name="sample-main_main" target="1.8" />
+      <module name="sample-main_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
