@@ -6,6 +6,7 @@ repositories {
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
+    compile 'com.squareup:kotlinpoet:0.5.0'
     compile "com.google.auto.service:auto-service:1.0-rc2"
     kapt "com.google.auto.service:auto-service:1.0-rc2"
 }

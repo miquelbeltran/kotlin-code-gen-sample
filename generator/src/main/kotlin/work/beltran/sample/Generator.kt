@@ -1,23 +1,19 @@
 package work.beltran.sample
 
 import com.google.auto.service.AutoService
+import com.squareup.kotlinpoet.FileSpec
+import com.squareup.kotlinpoet.FunSpec
+import com.squareup.kotlinpoet.TypeSpec
 import java.io.File
-import javax.annotation.processing.AbstractProcessor
-import javax.annotation.processing.ProcessingEnvironment
-import javax.annotation.processing.Processor
-import javax.annotation.processing.RoundEnvironment
+import javax.annotation.processing.*
 import javax.lang.model.SourceVersion
 import javax.lang.model.element.TypeElement
 
 @AutoService(Processor::class)
 class Generator: AbstractProcessor() {
 
-    private val kaptKotlinGeneratedOption = "kapt.kotlin.generated"
-    private lateinit var kaptKotlinGenerated: File
-
     override fun init(p0: ProcessingEnvironment) {
         super.init(p0)
-        kaptKotlinGenerated = File(processingEnv.options[kaptKotlinGeneratedOption])
     }
 
     override fun getSupportedAnnotationTypes(): MutableSet<String> {
@@ -41,21 +37,21 @@ class Generator: AbstractProcessor() {
         return true
     }
 
-    private fun generateClass(className: String, `package`: String) {
-        val source = generateSource(`package`, className)
-        println("Generated: $source")
-        val relativePath = `package`.replace('.', File.separatorChar)
-        val folder = File(kaptKotlinGenerated, relativePath).apply { mkdirs() }
-        File(folder, "Generated_$className.kt").writeText(source)
-        println("Storing on: $folder")
+    private fun generateClass(className: String, pack: String) {
+        val fileName = "Generated_$className"
+        val file = FileSpec.builder(pack, fileName)
+                .addType(TypeSpec.classBuilder(fileName)
+                        .addFunction(FunSpec.builder("getName")
+                                .addStatement("return \"World\"")
+                                .build())
+                        .build())
+                .build()
+
+        val kaptKotlinGeneratedDir = processingEnv.options[KAPT_KOTLIN_GENERATED_OPTION_NAME]
+        file.writeTo(File(kaptKotlinGeneratedDir, "$fileName.kt"))
     }
 
-    private fun generateSource(pack: String, className: String) =
-            """
-        package $pack
-
-        class Generated_$className() {
-            fun getName() = "World"
-        }
-        """.trimIndent()
+    companion object {
+        const val KAPT_KOTLIN_GENERATED_OPTION_NAME = "kapt.kotlin.generated"
+    }
 }
