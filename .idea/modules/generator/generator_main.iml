@@ -6,24 +6,23 @@
         <compilerSettings />
         <compilerArguments>
           <option name="destination" value="$MODULE_DIR$/../../../generator/build/kotlin-classes/main" />
-          <option name="classpath" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jre8/1.1.3-2/c8da1d60b49926296fa95f2ccdb218b7912f9c17/kotlin-stdlib-jre8-1.1.3-2.jar:/home/miquel/.gradle/caches/modules-2/files-2.1/com.squareup/kotlinpoet/0.5.0/91947098e88bacfb2e1e8b40e92c178f7acf952c/kotlinpoet-0.5.0.jar:/home/miquel/.gradle/caches/modules-2/files-2.1/com.google.auto.service/auto-service/1.0-rc2/51033a5b8fcf7039159e35b6878f106ccd5fb35f/auto-service-1.0-rc2.jar:/home/miquel/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.1.4-3/9994f843b30b9d6f4b39b742ffb8637eb86d08d8/kotlin-reflect-1.1.4-3.jar:/home/miquel/.gradle/caches/modules-2/files-2.1/com.google.auto/auto-common/0.3/4073ab16ab4aceb9a217273da6442166bf51ae16/auto-common-0.3.jar:/home/miquel/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/18.0/cce0823396aa693798f8882e64213b1772032b09/guava-18.0.jar:/home/miquel/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/home/miquel/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jre7/1.1.4-3/e8c9cbfa33a3015fcc7581fe6a60a355bf7cd92c/kotlin-stdlib-jre7-1.1.4-3.jar:/home/miquel/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.1.4-3/7f07ece855a7d40d5ef430218593e92282ae2a74/kotlin-stdlib-1.1.4-3.jar" />
           <option name="noStdlib" value="true" />
           <option name="noReflect" value="true" />
           <option name="moduleName" value="generator_main" />
-          <option name="jvmTarget" value="1.6" />
           <option name="addCompilerBuiltIns" value="true" />
           <option name="loadBuiltInsFromDependencies" value="true" />
           <option name="languageVersion" value="1.1" />
           <option name="apiVersion" value="1.1" />
           <option name="pluginOptions">
             <array>
-              <option value="plugin:org.jetbrains.kotlin.kapt:output=/home/miquel/dev/kotlin-code-gen-sample/generator/build/tmp/kapt/main/wrappers/annotations.main.txt" />
+              <option value="plugin:org.jetbrains.kotlin.kapt:output=/Users/miquel/dev/github/kotlin-code-gen-sample/generator/build/tmp/kapt/main/wrappers/annotations.main.txt" />
               <option value="plugin:org.jetbrains.kotlin.kapt:inherited=true" />
             </array>
           </option>
           <option name="pluginClasspaths">
             <array />
           </option>
+          <option name="version" value="true" />
         </compilerArguments>
       </configuration>
     </facet>
