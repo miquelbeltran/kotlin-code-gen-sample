@@ -26,6 +26,12 @@
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/../../../sample-main/out/production/classes" />
     <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../sample-main/build/generated/source/kapt/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../../sample-main/build/generated/source/kapt/main" isTestSource="false" generated="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../sample-main/build/generated/source/kaptKotlin/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../../sample-main/build/generated/source/kaptKotlin/main" isTestSource="false" generated="true" />
+    </content>
     <content url="file://$MODULE_DIR$/../../../sample-main/build/tmp/kapt/main/kotlinGenerated">
       <sourceFolder url="file://$MODULE_DIR$/../../../sample-main/build/tmp/kapt/main/kotlinGenerated" isTestSource="false" />
     </content>
@@ -37,16 +43,24 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.2.30" level="project" />
+    <orderEntry type="module-library">
+      <library name="Gradle: kaptGeneratedClasses">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../sample-main/build/tmp/kapt3/classes/main" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.2.30" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.2.30" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jre7:1.2.30" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.google.auto.service:auto-service:1.0-rc2" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.google.guava:guava:18.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jre7:1.1.4-3" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: com.squareup:kotlinpoet:0.5.0" level="project" />
-    <orderEntry type="module" module-name="generator_main" scope="PROVIDED" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: com.google.auto:auto-common:0.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.google.guava:guava:18.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.jetbrains.kotlin:kotlin-reflect:1.1.4-3" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jre8:1.2.30" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.google.auto.service:auto-service:1.0-rc2" level="project" />
+    <orderEntry type="module" module-name="generator_main" scope="PROVIDED" />
   </component>
 </module>

@@ -6,7 +6,6 @@
         <compilerSettings />
         <compilerArguments>
           <option name="destination" value="$MODULE_DIR$/../../build/kotlin-classes/test" />
-          <option name="classpath" value="" />
           <option name="noStdlib" value="true" />
           <option name="noReflect" value="true" />
           <option name="moduleName" value="kotlin-code-gen-sample" />
