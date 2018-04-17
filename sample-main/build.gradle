@@ -19,5 +19,5 @@ sourceSets {
 dependencies {
     kapt project(":generator")
     compileOnly project(":generator")
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
 }
